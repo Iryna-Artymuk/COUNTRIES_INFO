@@ -35,11 +35,10 @@ function getCountryOnInput() {
         Notify.warning(
           'Too many matches found. Please enter a more specific name.'
         );
-        innerHTML = '';
+
         return;
       }
       generateMarkupList(data);
-      innerHTML = '';
     })
     .catch(error => console.log(error));
 }
