@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  
 }
 
 body {
@@ -11,12 +10,12 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  background-image: url("../img/world-67861_1280.png");
-  background-size:cover;
+  background-image: url('../img/world-67861_1280.png');
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-ul{
+ul {
   list-style: none;
 }
 #search-box {
@@ -28,49 +27,36 @@ ul{
   display: block;
 }
 
-
-
-.country-list{
+.country-list {
   width: 500px;
   display: flex;
   flex-direction: column;
-justify-content: center;
-gap: 20px;
-background-color: rgba(67, 66, 67, 0.6);
-  list-style-type: none;
+  gap: 20px;
+
+  background-color: rgba(67, 66, 67, 0.6);
+
   margin: auto;
-
-
 }
-.country-wrapper{
+.country-wrapper {
+  display: flex;
 
-    display: flex;
-    align-content: flex-end;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+  align-items: center;
+  gap: 20px;
 }
 
 .title {
   font-size: 24px;
-  color: black;  
+  color: black;
   font-weight: 700;
   text-shadow: 0px 1px 1px #777b7a;
 }
-.countryInfo{
+.countryInfoText {
   color: #fff;
   font-weight: 500;
   display: block;
-  
 }
-.singlCountryInfo{
+.singlCountryInfo {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-
-
-
-
-

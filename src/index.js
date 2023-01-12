@@ -52,12 +52,12 @@ function generateMarkupList(data) {
           `  <li class="singlCountryInfo">
            <div><img src=" ${flags.svg}" alt="" width="200"></div>
                 <ul>
-                  <li><p class="title countryInfo">${countryName}</p></li>
-                  <li><p class="countryInfo"> Capital: ${capital}</p></li>
-                  <li><p class="countryInfo"> Population: ${numberWithSpaces(
+                  <li><p class="title countryInfoText">${countryName}</p></li>
+                  <li><p class="countryInfoText"> Capital: ${capital}</p></li>
+                  <li><p class="countryInfoText"> Population: ${numberWithSpaces(
                     population
                   )}</p></li> 
-                   <li><p class="countryInfo">Language:  ${languages.map(
+                   <li><p class="countryInfoText">Language:  ${languages.map(
                      item => item.name
                    )}</p></li> 
                 </ul>
@@ -73,7 +73,7 @@ function generateMarkupList(data) {
       .map(
         ({ flags, name: countryName }) =>
           `<li> 
-          <div class="country-wrapper" > <img src=" ${flags.svg}" alt="" width="100"> <span class="countryInfo"> ${countryName}</span></div>
+          <div class="country-wrapper" > <img src=" ${flags.svg}" alt="" width="100"> <span class="countryInfoText"> ${countryName}</span></div>
         </li>`
       )
       .join('');
