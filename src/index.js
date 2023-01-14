@@ -8,7 +8,6 @@ const DEBOUNCE_DELAY = 500;
 const ref = {
   input: document.querySelector('#search-box'),
   list: document.querySelector('.country-list'),
-  countryInfo: document.querySelector('.country-info'),
 };
 
 ref.input.addEventListener(
@@ -17,6 +16,7 @@ ref.input.addEventListener(
 );
 
 function getCountryOnInput() {
+  ref.list.innerHTML = ' ';
   const countryName = ref.input.value.trim();
 
   if (!countryName) {
@@ -68,7 +68,7 @@ function generateMarkupList(data) {
     ref.list.innerHTML = markup;
   }
 
-  if (data.length > 1 && data.length < 10) {
+  if (data.length > 1 && data.length <= 10) {
     const markup = data
       .map(
         ({ flags, name: countryName }) =>
